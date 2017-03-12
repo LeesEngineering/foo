@@ -3,13 +3,9 @@ class FoosController < ApplicationController
 
   # POST /foos
   def create
-    @foo = Foo.new(foo_params)
-    person = { "name":"Bruce", "age":25 }
-     person.name
-    if @foo.save
-      render json: @foo, status: :created, location: @foo
-    else
-      render json: @foo.errors, status: :unprocessable_entity
-    end
+  # @foo = Foo.new(foo_params)
+    #person = { "name":"Bruce", "age":25 }
+  render json: {value:"bar"}
+
   end
 end
